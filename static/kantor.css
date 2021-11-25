@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    min-height: 75vh;
+    background: #505562;
+    color: #fff;
+    height: 50px;
+    font-size: 25px;
+}
+.header {
+    text-align: center;
+    background-color: #2d2d37;
+    padding: 1.75rem;
+    
+}
+.submit {
+    background-color: #00b386;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.2rem;
+    
+}
+.inside {
+    background-color: #222;
+    height: 150px;
+}
+p {
+    background-color: black;
+    color: cadetblue;
+}

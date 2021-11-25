@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kalkulator walut</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='kantor.css')}}">
+    </head>
+    <body>
+        <div class='container'>
+            <div class='header'><h2>Konwerter walut</h2></div>
+            <form  action="" class='inside' method='POST' enctype=multipart/form-data>
+                <label for='amount'>Podaj ilość</label><br>
+                <input type='number' id='amount' name='amount' size='5'><br>
+                <label for='waluta'>Wybierz walute</label><br>
+                <select name='waluta' id='waluta'>
+                    <option value='USD'>USD</option>
+                    <option value='AUD'>AUD</option>
+                    <option value='CAD'>CAD</option>
+                    <option value='EUR'>EUR</option>
+                    <option value='HUF'>HUF</option>
+                    <option value='CHF'>CHF</option>
+                    <option value='GBP'>GBP</option>
+                    <option value='JPY'>JPY</option>
+                    <option value='CZK'>CZK</option>
+                    <option value='DKK'>DKK</option>
+                    <option value='NOK'>NOK</option>
+                    <option value='SEK'>SEK</option>
+                    <option value='XDR'>XDR</option>
+                </select><br><br>
+                <div class='submit'>
+                    <input type='submit' value='Przelicz'>
+                </div>
+                <input value="{{ wynik }}" type="number" id="wynik" placeholder="wynik" style="text-align:center" disabled> PLN
+            </form>
+        </div>
+    </body>
+</html>
